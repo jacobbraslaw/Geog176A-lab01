@@ -1,0 +1,48 @@
+---
+title: "Learn Rmarkdown"
+author: "Jacob Braslaw"
+date: "08/06/2020"
+output: html_document
+---
+
+# Header 1
+## Header 2
+### Header 3
+***** 
+ more than 3* gives line break
+ #bullets
+ 
+ - first
+    - second
+ - third
+ 
+ #numbered list
+ 
+ 1. first
+ 2. second
+ 3. third
+
+#attached hyper link can just paste 
+
+https://github.com/jacobbraslaw/Geog176A-lab01
+
+## or just attach word
+
+[Link](https://github.com/jacobbraslaw/Geog176A-lab01)
+
+:[](../img/rmarkdownflow.png)
+```{r}
+plot(1:15,1:15)
+```
+this is a plot
+```{r warning=FALSE, message=FALSE, echo=FALSE}
+library(tidyverse)
+```
+
+#COMAND+option+I= SHORTCUT FOR R CODE
+CHUNK
+
+```{r, message=FALSE}
+cities= readr::read_csv("../data/uscities.csv")
+```
+
